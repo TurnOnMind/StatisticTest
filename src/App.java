@@ -1,8 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Blop[] blops = new Blop[1000]; 
-        for (int i = 0; i < 1000; i++) {
-            blops[i] = new Blop(true);
+        Symulation sym = new Symulation(100);
+        for (int index = 0; index < 10; index++) {
+            sym.nextRoll();
+            sym.currentState();
         }
     }
 }
